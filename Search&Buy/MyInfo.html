@@ -1,0 +1,126 @@
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="stile.css">
+<script type="text/javascript" src="login.json"></script>
+ <script type="text/javascript" src="Prodotti.js"></script>
+  <script type="text/javascript" src="MyInfo.js"></script>
+
+
+
+</head>
+<body onload="caricamento()">
+	<!-- nav bar inizia qui -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light">
+  <a class="navbar-brand" href="Home.html">Search&Buy</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" id="log">
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ShoppingBasket.html">Shopping Basket <span id ="bs" class="badge badge-light"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">My Purchases</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Home.html" onclick="clr()">Log Off<span id ="bs" class="badge badge-light"></span></a>
+      </li>
+     
+      
+    </ul>
+  
+  </div>
+</nav> 
+<!-- card deck -->
+<center>
+  <div class="Info" id="myinfo">
+    Nome :
+<br>
+    <input id="Nome" type="Text" >
+    <br>
+Cognome:
+<br>
+    <input id="Cognome" type="Text" >
+    <br>
+Email:
+<br>
+    <input id="Email" type="Email" >
+    <br>
+Password:
+<br>
+    <input id="Password" type="Password">
+    <br>
+DataNascita:
+<br>
+    <input id="DataDiNascita" type="Date" >
+    <br>
+Indirizzo:
+<br>
+    <input id="Indirizzo" type="Text" >
+    <br>
+    Tipo : 
+    <br>
+  <input id="TipoPagamento" type="Text" >
+    <br>
+  </div>
+<!-- separo venditore da cliente-->
+
+  <div class="Info" id="myinfoV">
+    Nome :
+<br>
+    <input id="NomeV" type="Text" >
+    <br>
+    Nome Azienda:
+<br>
+    <input id="NomeAzienda" type="Text" >
+    <br>
+Tipo Di attivita':
+<br>
+    <input id="TipoDiAttivita" type="Text" >
+    <br>
+Email:
+<br>
+    <input id="EmailV" type="Email" >
+    <br>
+Password:
+<br>
+    <input id="PasswordV" type="Password">
+    <br>
+Data Di Nascita:
+<br>
+    <input id="DataDiNascitaV" type="Date" >
+    <br>
+Indirizzo:
+<br>
+    <input id="IndirizzoV" type="Text" >
+    <br>
+    Partita Iva: 
+    <br>
+  <input id="PartitaIva" type="Text" >
+    <br>
+   Numero Di Telefono: 
+    <br>
+  <input id="Numero" type="Text" >
+    <br>
+  </div>
+  <br>
+  <button onclick='Delete()' class='btn btn-danger'>Delete Account</button>
+    <button onclick='Modify()' class='btn btn-primary'>Modify Account</button>
+  </center>
+
+</div>
+
+</div>
+ 
+</body>
+</html>

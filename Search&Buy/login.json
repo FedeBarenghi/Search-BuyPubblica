@@ -1,0 +1,71 @@
+
+var Utenti=[
+	{
+
+"Clienti":[
+
+	{
+	"ID":1
+	,
+	"Nome":"Mario"
+	,
+	"Cognome":"Rossi"
+	,
+	"DataNascita":"1990-11-19"
+	,
+	"Email":"Mariorossi@mail.com"
+	,
+	"Indirizzo":"viaGaribaldi1"
+	,
+	"Password":"124"
+	,
+	"tipo":"c"
+	,
+	"Privacy":"si"
+	,
+	"TipoPagamento":"CartaDiCredito"
+	,
+	"acquisti":[]
+	
+	
+
+	}
+      ]
+     ,
+
+	"Venditori":[
+	{
+	"ID":1
+	,
+	"Nome":"Luca"
+	,
+	"TipoDiAttivita":"Grossista"
+	,
+	"NomeAzienda":"Luca S.R.L."
+	,
+	"NumeroDiTelefono":"3345231"
+	,
+	"Email":"Lucaverdi@mail.com"
+	,
+	"Indirizzo":"viaGaribaldi2"
+	,
+	"Password":"123"
+	,
+	"PartitaIva":"384813094u091"
+	,
+	"tipo":"v"
+	,
+	"DataNascita":"1339-08-1990"
+	,
+	"Recensioni":[]
+	
+	}
+      ]
+
+}
+]
+
+
+
+
+  		

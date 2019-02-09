@@ -1,0 +1,101 @@
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="stile.css">
+<script type="text/javascript" src="login.json"></script>
+ <script type="text/javascript" src="Prodotti.js"></script>
+  <script type="text/javascript" src="Registration.js"></script>
+
+
+</head>
+ <body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light">
+  <a class="navbar-brand" href="Home.html" id="logBrand">Search&Buy</a> 
+</nav> 
+  <center>
+    <form>
+      Vuoi Registrarti come Cliente o Venditore?
+      <br>
+    <input id="sub" name ="subscribe" type="radio" value="c" onclick="radiovalue(this.value)"> <label>Cliente</label> 
+    <input id="sub" name="subscribe" type="radio" value="v" onclick="radiovalue(this.value)"> <label>Venditore </label>
+    <br>
+  </form>
+    <div id="c"> 
+Nome :
+<br>
+    <input id="Nome" type="Text" >
+    <br>
+Cognome:
+<br>
+    <input id="Cognome" type="Text" >
+    <br>
+Email:
+<br>
+    <input id="Email" type="Email" >
+    <br>
+Password:
+<br>
+    <input id="Password" type="Password">
+    <br>
+DataNascita:
+<br>
+    <input id="DataDiNascita" type="Date" >
+    <br>
+Indirizzo:
+<br>
+    <input id="Indirizzo" type="Text" >
+    <br>
+    Tipo pagamento: 
+    <br>
+     <input id="Pagamento" name ="subscribe" type="radio" value="cc" onclick="pag(this.value)"> <label>Carta Di Credito</label> 
+    <input id="Pagamento" name="subscribe" type="radio" value="cv" onclick="pag(this.value)"> <label>Carta Prepagata</label>
+    <br>
+    <input id="Privacy" name ="Privacy" type="radio" value="si" onclick="priv(this.value)"> <label>Cliccando questo pulsante accetti al trattamento dei tuoi dati </label> 
+    <br>
+    
+<button class="btn btn-primary" onclick="Registratio()">Registrati</button>
+  </div>
+    <div id="v"> 
+      Nome :
+<br>
+    <input id="NomeV" type="text" >
+    <br>
+Tipo Di Attività:
+<br>
+    <input id="TipoDiAttivita" type="Text" >
+    <br>
+Email:
+<br>
+    <input id="EmailV" type="Email" >
+    <br>
+    Nome Attività:
+<br>
+    <input id="NomeAttivita" type="Text" >
+    <br>
+Password:
+<br>
+    <input id="PasswordV" type="Password">
+    <br>
+DataNascita:
+<br>
+    <input id="DataDiNascitaV" type="Date" >
+    <br>
+Numero Di Telefono:
+<br>
+    <input id="NumeroDiTelefono" type="Text" >
+    <br>
+    Partita Iva:
+<br>
+    <input id="Iva" type="Text" >
+    <br>
+
+
+<button class="btn btn-primary" onclick="Registratio()">Registrati</button>
+</div>
+  </center>
+</body>
+</html>
